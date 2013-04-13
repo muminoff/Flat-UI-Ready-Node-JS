@@ -1,0 +1,13 @@
+<% layout('layout') -%>
+<h1>Flat UI Ready</h1>
+<p>This is my second study case after "Hello World" in node.js, trying to use express and ejs.<br />
+But, Still without database connection</p>
+<p><a href="designmodo.com/flat-free/">More about Flat UI</a></p>
+<p>Here are some muppets we know about:
+	<ul>
+		<%-partial('muppet',muppets) %>
+	</ul>
+</p>
+<% include extra %>
+<% block('header', "<p>I'm in the header.</p>") -%>
+<% block('footer', "<p>I'm in the footer.</p>") -%>
